@@ -23,6 +23,8 @@ let write = (buf) => {
 };
 
 let co = require('co');
+let fs = require('fs');
+let path = require('path');
 
 function testC() {
     let buf = '테스트';

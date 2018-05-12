@@ -22,6 +22,9 @@ let write = (buf) => {
     });
 };
 
+let fs = require('fs');
+let path = require('path');
+
 async function testD() {
 
     let buf = '테스트';

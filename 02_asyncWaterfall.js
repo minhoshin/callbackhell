@@ -1,4 +1,6 @@
 let asy = require('async');
+let fs = require('fs');
+let path = require('path');
 
 function testB() {
     let buf = '테스트';
