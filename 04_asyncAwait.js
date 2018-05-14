@@ -4,7 +4,7 @@ let read = () => {
             if(err) reject(err);
             else {
                 console.log("읽기 : " + result);
-                resolve();
+                resolve(result);
             }
         });
     });
@@ -29,7 +29,8 @@ async function testD() {
 
     let buf = '테스트';
     await write(buf);
-    await read();
+    const text = await read();
+    console.log(text);
     console.log('완료');
 }
 
